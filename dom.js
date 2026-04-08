@@ -2167,29 +2167,7 @@
 
 // // })
 // // console.log(x);
-let data= [
-  { id: 1, name: "Aarav Sharma", contact: "9876500001" },
-  { id: 2, name: "Vivaan Patel", contact: "9876500002" },
-  { id: 3, name: "Aditya Singh", contact: "9876500003" },
-  { id: 4, name: "Vihaan Reddy", contact: "9876500004" },
-  { id: 5, name: "Arjun Kumar", contact: "9876500005" },
-  { id: 6, name: "Sai Krishna", contact: "9876500006" },
-  { id: 7, name: "Rohan Das", contact: "9876500007" },
-  { id: 8, name: "Karthik Nair", contact: "9876500008" },
-  { id: 9, name: "Rahul Verma", contact: "9876500009" },
-  { id: 10, name: "Ankit Yadav", contact: "9876500010" },
-
-  { id: 11, name: "Neha Gupta", contact: "9876500011" },
-  { id: 12, name: "Priya Mehta", contact: "9876500012" },
-  { id: 13, name: "Sneha Iyer", contact: "9876500013" },
-  { id: 14, name: "Ananya Rao", contact: "9876500014" },
-  { id: 15, name: "Pooja Sharma", contact: "9876500015" },
-  { id: 16, name: "Kavya Nair", contact: "9876500016" },
-  { id: 17, name: "Divya Reddy", contact: "9876500017" },
-  { id: 18, name: "Aishwarya Singh", contact: "9876500018" },
-  { id: 19, name: "Ritika Jain", contact: "9876500019" },
-  { id: 20, name: "Meera Patel", contact: "9876500020" },
-
+let data1= [
   { id: 21, name: "Suresh Kumar", contact: "9876500021" },
   { id: 22, name: "Mahesh Babu", contact: "9876500022" },
   { id: 23, name: "Rajesh Khanna", contact: "9876500023" },
@@ -2286,24 +2264,35 @@ let data= [
 //     }
 // )
 // console.log(x);
-let user=prompt("enetr")
-const result = data.reduce((acc, contact) => {
+let user=prompt("enetr").toLocaleLowerCase()
+const result = data1.reduce((acc, contact) => {
     
-  if (String(contact.contact).includes(user)) {
-    return {name:contact.name,cotact:contact.contact}
+  if ((contact.name).startsWith(user)) {
+    return {name:contact.name,contact:contact.contact}
   }
   return acc;
-}, []);
-result.filter((d,i)=>{
-    if (d==="kavya"){
-    console.log(d.contact);
 
-}
-else{
-    console.log("not found");
-}
-})
-let a=[1,2,3,4,5,6,7,8,9,10]
+}, []);
+console.log(result);
+
+// let use=prompt("enter name").toLocaleLowerCase()
+// let resul=data1.reduce((acc,data)=>{
+//   if (String(data.name).startsWith(use)){
+//     return{name:data.name,contact:data.contact}
+//   }
+//   return acc;
+// },[])
+// console.log(resul);
+// result.filter((d,i)=>{
+//     if (d==="kavya"){
+//     console.log(d.contact);
+
+// }
+// else{
+//     console.log("not found");
+// }
+// })
+// let a=[1,2,3,4,5,6,7,8,9,10]
 // sum=0
 // a.forEach((d,i)=>
 // {   sum+=d
@@ -2565,9 +2554,13 @@ let data=[
     }
   }
 ]
- let res=data.reduce((sum,b)=>
-{
-    return (sum+" "+b.description)
-},"")
-console.log(res);
+
+
+
+
+//  let res=data.reduce((sum,b)=>
+// {
+//     return (sum+" "+b.description)
+// },"")
+// console.log(res);
 

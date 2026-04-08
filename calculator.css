@@ -1,0 +1,82 @@
+.main{
+    margin: 50px;
+    margin-left: 200px;
+    margin-right: 200px;
+border: 5px solid black;
+    /* width: 300px; */
+    padding: 50px;
+    width: 450px;
+    border-radius: 20px;
+    background-color: antiquewhite;
+}
+
+.options{
+    border: 2px solid gray;
+    border-radius: 20PX;
+    padding: 20px;
+}
+
+button{
+    width: 20%;
+height: 50px;
+border-radius: 20px;
+background-color: rgb(216, 212, 204);
+font-size: 30px;
+
+}
+#eq{
+    background-color: orangered;
+    width:45% ;
+    
+
+}
+.row1{
+    margin-left: 20px;
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+
+}
+
+.row2{
+    margin-left: 20px;
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+
+}
+.row3{
+    margin-left: 20px;
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+
+}
+.row4{
+    margin-left: 20px;
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+
+}
+.row5{
+    display: flex;
+    /* gap: 15px; */
+    /* margin-bottom: 20px;
+    margin-left: 200px; */
+
+}
+#zero{
+    margin-left: 20px;
+}
+
+#inp{
+    width: 100%;
+    background-color: rgb(244, 181, 63);
+    height: 50px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 30px;
+    color: black;
+}
