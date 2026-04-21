@@ -1,4 +1,10 @@
 
+let btn=document.getElementsByTagName("button")[0]
+let inp=document.getElementById("inp")
+let hide=document.getElementById("hide")
+let actual=""
+let ishidden=false
+let pass=document.getElementById("password")
 let otp=document.getElementById("otp")
 let spanotp=document.getElementById("otpspan")
 otp.addEventListener("click",()=>{
@@ -11,11 +17,6 @@ otp.addEventListener("click",()=>{
 
 })
 
-let btn=document.getElementsByTagName("button")[0]
-let inp=document.getElementById("inp")
-let hide=document.getElementsByTagName("button")[1]
-let actual=""
-let ishidden=false
 
 
 let submit=document.getElementById("submit")
@@ -47,8 +48,8 @@ hide.addEventListener("click",()=>{
 
 
 let copy=document.getElementsByTagName("button")[2]
-let pass=document.getElementsByTagName("span")[0]
-btn.addEventListener("click",()=>{
+let generatepassword=document.getElementById("generatepassword")
+generatepassword.addEventListener("click",()=>{
 
     let alpha="QWERTYUIOPASDFGHJKLZXCVBNM"
     let alpha2="asdfghjklmnbvcxzqwertyuiop"
@@ -80,15 +81,15 @@ copy.addEventListener("click",()=>{
 // let copy = document.getElementsByTagName("button")[2];
 // let pass = document.getElementsByTagName("span")[0];
 
-// let actual = "";        // ✅ store real password
-// let ishidden = false;  // ✅ state
+// let actual = "";       
+// let ishidden = false;  
 
 // hide.addEventListener("click", () => {
 
 //   ishidden = !ishidden;
 
 //   if (ishidden) {
-//     pass.innerText = "*".repeat(actual.length); // ✅ fixed repeat
+//     pass.innerText = "*".repeat(actual.length);
 //   } else {
 //     pass.innerText = actual;
 //   }
@@ -114,12 +115,12 @@ copy.addEventListener("click",()=>{
 //         password += select[rand2];
 //     }
 
-//     actual = password;        // ✅ store it
+//     actual = password;      
 //     pass.innerText = password;
-//     ishidden = false;         // ✅ reset state
+//     ishidden = false;       
 // });
 
 // copy.addEventListener("click", () => {
-//     let text = actual;       // ✅ copy real password
+//     let text = actual;       
 //     navigator.clipboard.writeText(text);
 // });

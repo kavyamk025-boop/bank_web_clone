@@ -1,0 +1,56 @@
+.cart{
+    background-color: rgb(33, 202, 33);
+    border: 5px solid rgb(9, 69, 42);
+    border-radius: 20px;
+    width: 25%;
+    padding: 30px;
+    text-align: center;
+}
+.cart2{
+    background-color: rgb(221, 138, 168);
+    border: 5px solid red;
+    border-radius: 20px;
+    width: 25%;
+    padding: 30px;
+    text-align: center;
+
+}
+.cards{
+    /* background-color: wheat; */
+    margin: 30px;
+    /* border: 5px solid rebeccapurple; */
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+#todo{
+    background-color:red;
+    color: white;
+    border-radius: 20px;
+    border: 5px solid rgb(252, 153, 153);
+    height: 50px;
+    font-size: 20px;
+    padding: 10px;
+}
+#done{
+    border-radius: 20px;
+    color: white;
+    background-color: green;
+    border: 5px solid rgb(0, 255, 94);
+     height: 50px;
+    font-size: 20px;
+    padding: 10px;
+}
+#btn{
+    display: flex;
+    justify-content: space-evenly;
+}
+#all{
+background-color: yellow;
+    border-radius: 20px;
+    border: 5px solid rgb(217, 255, 0);
+    height: 50px;
+    font-size: 20px;
+    padding: 10px;
+}

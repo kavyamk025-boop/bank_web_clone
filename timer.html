@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>timer:<span></span></h1>
+    <button id="on">ON</button>
+    <button id="reset">RESET</button>
+    <button id="stop">STOP</button>
+</body>
+<script>
+    let sp=document.getElementsByTagName("span")[0]
+    let on=document.getElementById("on")
+    let reset=document.getElementById("reset")
+    let stop=document.getElementById("stop")
+let interval;
+        let i=0
+    on.addEventListener("click",()=>{
+        
+        clearInterval(interval);
+ 
+      interval=  setInterval(() => {
+                sp.innerText=`${i}`
+                i++
+        }, 1000); 
+    })
+    reset.addEventListener("click",()=>{
+      sp.innerText="0"})
+
+stop.addEventListener("click",()=>{
+    clearInterval(interval);
+})
+
+</script>
+</html>
